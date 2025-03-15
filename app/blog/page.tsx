@@ -9,6 +9,7 @@ import { motion } from "framer-motion"
 import { Search, Calendar, Clock, ArrowRight, BookOpen, Tag } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
+import { Navbar } from "../components/navbar"
 
 // Sample blog data
 const blogPosts = [
@@ -101,6 +102,7 @@ export default function BlogPage() {
 
   return (
     <PageTransition>
+      <Navbar />
       <div className="container py-6 mt-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -11,6 +11,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { motion } from "framer-motion"
 import { Bell, User, Shield, Eye, EyeOff, Save, RefreshCw } from "lucide-react"
 import { useState } from "react"
+import { Navbar } from "../components/navbar"
+
 
 export default function SettingsPage() {
   const [showPassword, setShowPassword] = useState(false)
@@ -25,6 +27,7 @@ export default function SettingsPage() {
 
   return (
     <PageTransition>
+      <Navbar />
       <div className="container py-6 mt-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

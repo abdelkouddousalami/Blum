@@ -8,6 +8,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { motion } from "framer-motion"
 import { Search, HelpCircle, Mail, MessageSquare, Phone, FileText } from "lucide-react"
 import { useState } from "react"
+import { Navbar } from "../components/navbar"
+
 
 // Sample FAQ data
 const faqs = [
@@ -65,6 +67,7 @@ export default function HelpPage() {
 
   return (
     <PageTransition>
+      <Navbar />
       <div className="container py-6 mt-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

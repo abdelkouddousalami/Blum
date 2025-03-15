@@ -4,6 +4,8 @@ import { PageTransition } from "../components/page-transition"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { motion } from "framer-motion"
+import { Navbar } from "../components/navbar"
+
 import {
   LineChart,
   Line,
@@ -68,6 +70,7 @@ export default function AnalyticsPage() {
 
   return (
     <PageTransition>
+      <Navbar />
       <div className="container py-6 mt-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
